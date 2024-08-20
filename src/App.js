@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Heading from './components/Heading';
+import ComplementarySequence from './components/ComplementarySequence';
+import ReverseSequence from './components/ReverseSequence';
+import ReverseComplementarySequence from './components/ReverseComplementarySequence';
+import GCBasePair from './components/GCBasePair';
+import ORFSequence from './components/ORFSequence';
+import StartStopCodon from './components/StartStopCodon';
+import PolarNonPolarCDS from './components/PolarNonPolarCDS';
+import Mutation from './components/Mutation';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{backgroundColor: '#fdfdaf'}}>
+      <Heading/>
+      <hr></hr>
+      <ComplementarySequence/>
+      <hr></hr>
+      <ReverseSequence/>
+      <hr></hr>
+      <ReverseComplementarySequence/>
+      <hr></hr>
+      <GCBasePair/>
+      <hr></hr>
+      <hr></hr>
+      <ORFSequence/>
+      <hr></hr>
+      <StartStopCodon/>
+      <hr></hr>
+      <PolarNonPolarCDS/>
+      <hr></hr>
+      <hr></hr>
+      <Mutation/>
     </div>
   );
 }
